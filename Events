@@ -1,0 +1,46 @@
+{
+    "month": 1,
+    "year": 1914,
+    "eventImportance": 0,
+    "chanceToHappenEveryMonth": 0.0,
+    "name": "template example",
+    "text": "lorem ipsum te dolorem",
+    "requirements": [
+        {
+            "requiredEvents": [],
+            "armyEfficiencyNeeded": -1.0,
+            "popularityNeeded": -1.0,
+            "freedomNeeded": -1.0,
+            "fronteerNeeded": -1.0,
+            "budgetNeeded": -1.0
+        },
+        {
+            "requiredEvents": [
+                "event before 'template example'"
+            ],
+            "armyEfficiencyNeeded": -1.0,
+            "popularityNeeded": -1.0,
+            "freedomNeeded": -1.0,
+            "fronteerNeeded": -1.0,
+            "budgetNeeded": -1.0
+        }
+    ],
+    "options": [
+        {
+            "text": "hey",
+            "armyEfficiencyModify": 0.0,
+            "popularityModify": 0.0,
+            "freedomModify": 0.0,
+            "fronteerModify": 0.0,
+            "budgetModify": 0.0
+        },
+        {
+            "text": "hey2",
+            "armyEfficiencyModify": 0.0,
+            "popularityModify": 0.0,
+            "freedomModify": 0.0,
+            "fronteerModify": 0.0,
+            "budgetModify": 0.0
+        }
+    ]
+}
