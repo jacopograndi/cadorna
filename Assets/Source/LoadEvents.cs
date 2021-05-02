@@ -9,7 +9,7 @@ public class LoadEvents : MonoBehaviour {
     public static void SaveData(CadEvent cevent) {
         string path = Application.persistentDataPath + "/temp.txt";
         if (!Application.isEditor) {
-            path = "Events";
+            path = "Events"; 
         }
         using (StreamWriter write = new StreamWriter(path)) {
             write.Write(JsonUtility.ToJson(cevent, true));
