@@ -1,6 +1,7 @@
 {
-    "month": 1,
-    "year": 1914,
+    "month": -1,
+    "year": -1,
+    "season": "not relevant",
     "eventImportance": 0,
     "chanceToHappenEveryMonth": 0.0,
     "name": "template example",
@@ -8,21 +9,34 @@
     "requirements": [
         {
             "requiredEvents": [],
-            "armyEfficiencyNeeded": -1.0,
-            "popularityNeeded": -1.0,
-            "freedomNeeded": -1.0,
-            "fronteerNeeded": -1.0,
-            "budgetNeeded": -1.0
+            "armyEfficiencyNeededAtLeast": -1.0,
+            "popularityNeededAtLeast": -1.0,
+            "freedomNeededAtLeast": -1.0,
+            "fronteerNeededAtLeast": -1.0,
+            "budgetNeededAtLeast": -1.0,
+            "armyEfficiencyNeededAtMost": -1.0,
+            "popularityNeededAtMost": -1.0,
+            "freedomNeededAtMost": -1.0,
+            "fronteerNeededAtMost": -1.0,
+            "budgetNeededAtMost": -1.0
         },
         {
             "requiredEvents": [
-                "event before 'template example'"
+                {
+                    "eventName": "The name of the event, like 'lol'",
+                    "selection": 0
+                }
             ],
-            "armyEfficiencyNeeded": -1.0,
-            "popularityNeeded": -1.0,
-            "freedomNeeded": -1.0,
-            "fronteerNeeded": -1.0,
-            "budgetNeeded": -1.0
+            "armyEfficiencyNeededAtLeast": -1.0,
+            "popularityNeededAtLeast": -1.0,
+            "freedomNeededAtLeast": -1.0,
+            "fronteerNeededAtLeast": -1.0,
+            "budgetNeededAtLeast": -1.0,
+            "armyEfficiencyNeededAtMost": -1.0,
+            "popularityNeededAtMost": -1.0,
+            "freedomNeededAtMost": -1.0,
+            "fronteerNeededAtMost": -1.0,
+            "budgetNeededAtMost": -1.0
         }
     ],
     "options": [

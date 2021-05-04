@@ -27,13 +27,14 @@ public class EventPopup : MonoBehaviour {
         nameLabel.text = e.name;
         descrLabel.text = e.text;
 
-        bottomline.GetComponent<RectTransform>().localPosition = 
-            new Vector3(0, e.options.Count*25+40, 0);
+        bottomline.GetComponent<RectTransform>().anchoredPosition = 
+            new Vector3(0, e.options.Count*25+15, 0);
         for (int i=0; i<e.options.Count; i++) {
-            Vector3 pos = new Vector3(0, e.options.Count * 25 + 32 - i * 25, 0);
+            Vector3 pos = new Vector3(0, e.options.Count * 25 + 8 - i * 25, 0);
+            print(pos);
             var obj = Instantiate(optionPrefab, pos, Quaternion.identity);
             obj.transform.SetParent(transform);
-            obj.GetComponent<RectTransform>().localPosition = pos;
+            obj.GetComponent<RectTransform>().anchoredPosition = pos;
             obj.GetComponent<TMP_Text>().text = e.options[i].text;
             int j = i;
             obj.GetComponent<Button>().onClick.AddListener(() => { OptionSelected(j); });
@@ -42,6 +43,7 @@ public class EventPopup : MonoBehaviour {
 
     void OptionSelected (int i) {
         FindObjectOfType<CadState>().ApplyOption(cevent.options[i]);
+        FindObjectOfType<EventEngine>().EventSelected(cevent, i);
         logger.Print("Choosen " + i);
         Destroy(gameObject);
     }

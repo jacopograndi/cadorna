@@ -21,5 +21,6 @@ public class ViewCadState : MonoBehaviour {
         armyEfficiency.text = "Efficienza dell'Esercito : " + state.armyEfficiency;
         popularity.text = "Popolarità tra le masse : " + state.popularity;
         freedom.text = "Dipendenza dal Governo : " + state.freedom;
+        fronteer.front = state.fronteer / 10.0f;
     }
 }

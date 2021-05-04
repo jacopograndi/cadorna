@@ -9,14 +9,10 @@ public class Logger : MonoBehaviour {
 
     void Start() {
         log = GetComponent<TMP_Text>();
-        log.text = "";
     }
 
     public void Print (object txt) {
-        if (!log) {
-            log = GetComponent<TMP_Text>();
-            log.text = "";
-        }
+        if (log == null) { log = GetComponent<TMP_Text>(); }
         log.text += txt.ToString() + "\n";
     }
 
